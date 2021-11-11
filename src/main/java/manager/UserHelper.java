@@ -57,4 +57,12 @@ public class UserHelper extends HelperBase {
     public void initLogin() {
         click(By.cssSelector("[href='/login']"));
     }
+
+    public void clickOnLoginButton(){
+        if(isElementPresent(By.cssSelector("#login")))
+        {
+            click (By.cssSelector("#login"));
+        }
+    }
+
 }

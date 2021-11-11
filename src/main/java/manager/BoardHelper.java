@@ -40,7 +40,7 @@ public class BoardHelper extends HelperBase {
         type(By.cssSelector("[data-test-id='create-board-title-input']"),board.getTitle());
     }
     public boolean isSubmitionConfirmed() {
-        WebDriverWait wait = new WebDriverWait(wd, 10);
+        WebDriverWait wait = new WebDriverWait(wd, 20);
         wait.until(ExpectedConditions.elementToBeClickable(wd.findElement(By.cssSelector("[data-test-id='create-board-submit-button']"))));
         return wd.findElement(By.cssSelector("[data-test-id='create-board-submit-button']")).isDisplayed();
     }
@@ -56,6 +56,7 @@ public class BoardHelper extends HelperBase {
         click(By.cssSelector("[data-test-id='header-create-menu-button']"));
 
         click(By.cssSelector("[aria-label='BoardIcon']"));
+        click(By.xpath("//div[@class='board-tile mod-add']"));
     }
     public void returnToHomePage() {click(By.cssSelector("._9Bfh6AVH84yAZe")); }
 }
