@@ -8,7 +8,7 @@ public class BoardDeletion extends TestBase{
     public void testBoardDeletion() throws InterruptedException {
         int bordCountBeforeDeletion = app.getBoard().getBordCount();
         //click on FirsBoard
-        app.getBoard().ClickOnfirstBoard();
+        app.getBoard().clickOnfirstBoard();
         app.getBoard().openSideBoardMenu();
         app.getBoard().openMore();
 

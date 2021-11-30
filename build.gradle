@@ -14,10 +14,44 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'io.github.bonigarcia:webdrivermanager:5.0.3'
     implementation 'ch.qos.logback:logback-classic:1.2.5'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
 
 
 }
 
 test {
     useTestNG()
+}
+task log(type: Test) {
+
+    useTestNG {
+
+        def groups = System.getProperty('groups')
+        if (groups != null) {
+            includeGroups groups
+        }
+
+        def suite = System.getProperty('suite', '')
+        if (suite.equals('log')) {
+            suites 'src/test/resources/logng.xml'
+        } else if (suite.equals('smoke')) {
+            suites 'src/test/resources/smoke.xml'
+        } else {
+            suites 'src/test/resources/testng.xml'
+        }
+
+        if (project.hasProperty('browser')) {
+            systemProperty 'browser', "${browser}"
+        }
+
+        if (project.hasProperty('target')) {
+            systemProperty 'target', "${target}"
+        }
+
+    }
 }

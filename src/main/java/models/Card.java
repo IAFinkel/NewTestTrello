@@ -7,12 +7,10 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 @Builder
+@ToString
 
-public class User {
-    private  String email;
-    private  String password;
-
-
+public class Card {
+    private String cardName;
+    private String color;
 }
