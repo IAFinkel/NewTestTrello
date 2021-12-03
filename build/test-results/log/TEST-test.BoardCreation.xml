@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.BoardCreation" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-11-30T17:54:19" hostname="LAPTOP-44JBEN25" time="0.0">
+<testsuite name="test.BoardCreation" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-02T16:26:25" hostname="LAPTOP-44JBEN25" time="14.471">
   <properties/>
-  <testcase name="testBoardCreation2" classname="test.BoardCreation" time="0.0">
-    <skipped/>
-  </testcase>
-  <system-out><![CDATA[19:54:19 INFO  test.TestBase - Start test-->testBoardCreation2
-19:54:19 INFO  test.TestBase - ******************************************
+  <testcase name="testBoardCreation2" classname="test.BoardCreation" time="14.471"/>
+  <system-out><![CDATA[18:26:25 INFO  test.TestBase - Start test-->testBoardCreation2
+18:26:25 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [data-test-id='header-create-menu-button']
+18:26:25 INFO  manager.MyListener - Element by locator-->By.cssSelector: [data-test-id='header-create-menu-button']was found
+18:26:30 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: ._3Qtx4lodxp9J0E
+18:26:31 INFO  manager.MyListener - Element by locator-->By.cssSelector: ._3Qtx4lodxp9J0Ewas found
+18:26:31 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [data-test-id='create-board-title-input']
+18:26:31 INFO  manager.MyListener - Element by locator-->By.cssSelector: [data-test-id='create-board-title-input']was found
+18:26:31 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [data-test-id='create-board-title-input']
+18:26:31 INFO  manager.MyListener - Element by locator-->By.cssSelector: [data-test-id='create-board-title-input']was found
+18:26:31 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [data-test-id='create-board-title-input']
+18:26:31 INFO  manager.MyListener - Element by locator-->By.cssSelector: [data-test-id='create-board-title-input']was found
+18:26:31 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [data-test-id='header-create-menu-popover']
+18:26:31 INFO  manager.MyListener - Element by locator-->By.cssSelector: [data-test-id='header-create-menu-popover']was found
+18:26:36 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [data-test-id='create-board-submit-button']
+18:26:36 INFO  manager.MyListener - Element by locator-->By.cssSelector: [data-test-id='create-board-submit-button']was found
+18:26:36 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: .list-name-input
+18:26:39 INFO  manager.MyListener - Element by locator-->By.cssSelector: .list-name-inputwas found
+18:26:39 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: .list-name-input
+18:26:39 INFO  manager.MyListener - Element by locator-->By.cssSelector: .list-name-inputwas found
+18:26:39 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: ._9Bfh6AVH84yAZe
+18:26:39 INFO  manager.MyListener - Element by locator-->By.cssSelector: ._9Bfh6AVH84yAZewas found
+18:26:40 INFO  test.TestBase - ******************************************
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

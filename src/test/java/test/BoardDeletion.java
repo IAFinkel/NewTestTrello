@@ -4,7 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BoardDeletion extends TestBase{
-    @Test
+
+    @Test(groups = {"del"}, invocationCount = 1)
     public void testBoardDeletion() throws InterruptedException {
         int bordCountBeforeDeletion = app.getBoard().getBordCount();
         //click on FirsBoard
